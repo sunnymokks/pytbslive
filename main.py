@@ -15,7 +15,7 @@ def root():
 
 @app.route("/tbslive")
 def tbslive():
-    doc = dominate.document()
+    doc = dominate.document(title="TBS")
     with doc.head:
         style("""
         .content {
